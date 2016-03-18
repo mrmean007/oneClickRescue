@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OneClick Rescue</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="logInButtonText">Log In</string>
+    <string name="signUpButtonText">Sign Up</string>
+    <string name="usernameLabel">Username</string>
+    <string name="passwordLabel">Password</string>
+    <string name="usernameEditTextHint">Enter Username</string>
+    <string name="passwordEditTextHint">Enter Password</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_user_home_acitivity">UserHomeAcitivity</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+    <string name="addressEditTextHint">Enter Your Postal Address</string>
+    <string name="passwordEtHint">Enter Password</string>
+    <string name="applicationLabel">OneClick_Rescue</string>
+    <string name="loginActivityName">Log In</string>
+    <string name="signupActivityName">Sign Up</string>
+    <string name="userActivityName">Home</string>
+    <string name="copyrightText">© All Rights Reserved.</string>
+    <string name="logoutButtonText">Log Out</string>
+    <string name="cancelButtonText">Cancel Help</string>
+    <string name="createAccountText">Create Account</string>
+
+</resources>

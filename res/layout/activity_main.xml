@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/form"
+    android:visibility="visible"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/textarea2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usernameLabel"
+            android:textColor="#FFFFAA" />
+
+        <EditText
+            android:id="@+id/usernameEt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:ems="10"
+            android:hint="@string/usernameEditTextHint"
+            android:textColor="#FFFFFF" 
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/passwordEt"
+            android:layout_alignRight="@+id/textView1"
+            android:text="@string/passwordLabel"
+            android:textColor="#FFFFAA" />
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="96dp"
+            android:ems="10"
+            android:hint="@string/passwordEditTextHint"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textarea2"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="login"
+            android:text="@string/logInButtonText"
+            android:textColor="#FFFFAA"
+            android:textColorHint="#FFFFAA" />
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createAccount"
+            android:text="@string/signUpButtonText"
+            android:textColor="#FFFFAA"
+            android:textColorHint="#FFFFAA" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonarea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/copyrightText"
+        android:textColor="#FFFAAA" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/uniogo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/buttonarea"
+        android:paddingRight="20dp"
+        android:src="@drawable/ourlogo" />
+
+</RelativeLayout>

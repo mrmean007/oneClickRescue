@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/form"
+    android:orientation="vertical"
+    tools:context=".UserHomeAcitivity" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Via SMS"
+        android:textColor="#FFFFaa" />
+
+    <LinearLayout
+        android:id="@+id/helpButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onHelpButtonClicked"
+            android:text="Medical"
+            android:textColor="#FFFFAA" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:text="Fire" 
+            android:onClick="onHelpButtonClicked"
+            android:textColor="#FFFFAA"/>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:onClick="onHelpButtonClicked"
+            android:text="Terrorist"
+            android:textColor="#FFFFAA" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:text="Police"
+            android:onClick="onHelpButtonClicked"
+            android:textColor="#FFFFAA" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otherButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/cancelButtonText" 
+            android:textColor="#FFFFAA"
+            android:onClick="onHelpCancelButtonClicked"
+            />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/logoutButtonText"
+            android:onClick="onCheckoutButtonClicked" 
+            android:textColor="#FFFFAA"/>
+
+    </LinearLayout>
+
+</LinearLayout>

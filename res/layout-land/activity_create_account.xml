@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/form"
+    tools:context=".CreateAccountActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/textArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/usernameEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="Enter your name"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/fathernameEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter your father name"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/EmailEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter your Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/phonnoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/EmailEt"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter your phon no"
+                android:inputType="phone"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/phon2Et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/phonnoEt"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Enter Emergency contact no"
+                android:inputType="phone"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/addressEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/addressEditTextHint"
+                android:inputType="textPostalAddress"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="38dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="@string/passwordEtHint"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/createbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:onClick="insert"
+                android:text="Create"
+                android:textColor="#FFFFAA" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    
+</RelativeLayout>
